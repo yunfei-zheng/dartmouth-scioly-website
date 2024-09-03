@@ -27,8 +27,8 @@
 
 /* Navbar is 50 px high */
 .navbar-brand img {
-    min-height: 26px;
-    height: 26px;
+    min-height: 48px;
+    height: 48px;
 }
 
 /* Effect for mousing over it */
