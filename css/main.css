@@ -59,6 +59,55 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* Code for all fade in? */
+#title1 {
+  opacity: 0;
+  animation: fade-in 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+#title2 {
+  opacity: 0;
+  animation: fade-in 0.8s ease;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+#title3 {
+  opacity: 0;
+  animation: fade-in 0.8s ease;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+
+.winter, #button-main, #button-learn-more {
+  opacity: 0;
+  animation: fade-in 1.6s ease-in; /* I thought the longer animation looked better for here */
+  animation-delay: 2.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/* Code for slide down animation? 
+#home h1 {
+  animation: slide-down 2s ease;
+}
+
+#home h4, #home a {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-down {
+  0% {margin-top: -100%;}
+  100% {margin-top: 0%;}
+}*/
 
 #button-main {
   color: white;
@@ -87,7 +136,7 @@ body {
   color: white;
 }
 
-#button-learn-more:hover, #home h1:hover {
+#button-learn-more:hover {
   color: rgb(24, 64, 56);
 }
 
