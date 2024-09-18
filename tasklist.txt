@@ -1,4 +1,6 @@
-MAIN WEBPAGE
-- Fix background scroll so that the text moves but the image stays in place
-    - DONE -- consider changing the image itself to be grayed out, so that when you overscroll it doesn't reach the "real" light portion of the image
-- Make 
+Nico's todo:
+- clean up bios, fix titles, and add final portrait photos
+- create footer with address and contact information
+- change logo
+- extend front page, add mission and vision, and the other things Sarah wanted
+- navbar has no padding when hovered over in compressed mode
