@@ -77,6 +77,12 @@ body {
   height: auto; 
 }
 
+.width {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
 
 .team-images {
   display: inline-block;
@@ -127,13 +133,6 @@ p.team-bio-text {
   height: auto;
   display: block;
   padding-right: 30px;
-}
-
-.width {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
 }
 
 /*Code taken from Stack Overflow to make the photos display properly on team.html*/
@@ -275,7 +274,7 @@ html[xmlns] .clearfix {
 
 .intro {
   height: calc(100vh - 90px);
-  min-height: 420px;
+  min-height: 520px;
 }
 
 .below-intro {
