@@ -84,25 +84,37 @@ body {
   max-width: 800px;
 }
 
-.team-images {
-  display: inline-block;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.team-flex {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3%;
 }
 
-.headshot-div {
-  float: left;
-  width: 33.333%;
-  margin-bottom: 6px;
+.team-member {
+  flex-grow: 1;
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media ( max-width: 800px) {
+  .team-member {
+    width: 50%;
+  }
+}
+
+@media ( max-width: 400px) {
+  .team-member {
+    width: 100%;
+  }
 }
 
 .text-div {
-  float: left;
-  width: 33.333%;
   padding-right: 30px;
   text-align: center;
-  height: 100%;
   overflow: auto;
 }
 
@@ -111,6 +123,7 @@ h4.team-bio-name {
   font-size: 20px;
   margin-bottom: 5px;
 }
+
 h4.team-bio-title {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
@@ -130,9 +143,9 @@ p.team-bio-text {
 
 .headshot {
   width: 100%;
-  height: auto;
-  display: block;
-  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 /*Code taken from Stack Overflow to make the photos display properly on team.html*/
