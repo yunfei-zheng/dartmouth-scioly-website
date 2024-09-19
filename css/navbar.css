@@ -39,6 +39,7 @@
 .nav-item > a:hover,
 .nav-item > a:focus {
     color: white !important;
+    padding-left: 10px;
 }
 
 /* Dropdown background color */
