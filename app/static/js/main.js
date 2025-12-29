@@ -35,6 +35,6 @@
 		/* Background */
 		
 		//Image Background 
-		$(".image-background").backstretch("images/baker_library.jpg");
+		$(".image-background").backstretch("{{ url_for('static', filename='images/baker_library.jpg') }}");
 
 })(jQuery);
