@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% if title %}
+        <title>{{ title }} - DUSO</title>
+        {% else %}
+        <title>Dartmouth Undergraduate Science Olympiad</title>
+        {% endif %}
+
+        <meta name="keywords" content="dartmouth, science olympiad, invitational, scioly, dartmouth college invitational, dartmouth college science olympiad invitational, dartmouth science olympiad, scio, so, tournament">
+        <meta name="description" content="Science Olympiad invitational tournament for high schools run by students at Dartmouth College. Coming TBD.">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="icon" type="image/x-icon" href="images/DUSO_DNA_white_background.png"/>
+
+        <!-- Custom Fonts -->
+        <!--link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'-->
+
+        <!-- Script to load navbar -->
+        <!-- JQuery needs to be loaded in head or else Bootstrap breaks -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            // wrapped in function so executes after the page is loaded
+            $(function() {
+                $("nav").load("navbar.html");
+            });
+        </script>
+    </head>
+    <body class="image-background">
+        <!-- Imported navbar -->
+        <nav class="navbar navbar-static-top"></nav>
+        
+        {% block content %}{% endblock %}
+
+        <div id="footer">
+            <h4 class="footer">Dartmouth Undergraduate Science Olympiad</h4>
+            <p class="footer">15 Dewey Field Road, Hanover, NH 03755</p>
+            <p class="footer"><a href= "mailto: dartmouthscioly@gmail.com">dartmouthscioly@gmail.com</a></p>
+        </div>
+        
+        <!-- Latest compiled and minified JavaScript: Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
