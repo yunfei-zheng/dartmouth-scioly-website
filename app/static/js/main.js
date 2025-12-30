@@ -35,6 +35,7 @@
 		/* Background */
 		
 		//Image Background 
-		$(".image-background").backstretch("{{ url_for('static', filename='images/baker_library.jpg') }}");
+		//$(".image-background").backstretch("{{ url_for('static', filename='images/baker_library.jpg') }}"); fix this later
+		$(".image-background").backstretch("static/images/baker_library.jpg");
 
 })(jQuery);

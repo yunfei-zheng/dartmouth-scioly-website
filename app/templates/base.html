@@ -24,18 +24,14 @@
         <!-- Script to load navbar -->
         <!-- JQuery needs to be loaded in head or else Bootstrap breaks -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script>
-            // wrapped in function so executes after the page is loaded
-            $(function() {
-                $("nav").load("navbar.html");
-            });
-        </script>
     </head>
     <body class="image-background">
 
         <nav class="navbar navbar-expand-sm bg-transparent w-100">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/DUSO_DNA_white_background.png"></a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="{{ url_for('static', filename='images/DUSO_DNA_white_background.png') }}">
+                </a>
                 <button class="navbar-toggler navbar-toggle collapsed custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
                     <span class="navbar-toggler-icon custom-toggler"></span>
                 </button>
