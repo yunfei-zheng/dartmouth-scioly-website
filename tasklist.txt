@@ -1,6 +1,0 @@
-Nico's todo:
-- clean up bios, fix titles, and add final portrait photos
-- create footer with address and contact information
-- change logo
-- extend front page, add mission and vision, and the other things Sarah wanted
-- navbar has no padding when hovered over in compressed mode
